@@ -1,20 +1,15 @@
 language: ruby
 
-# Version number
-rvm:
-  #- 2.2.10
+ruby: 
   - 2.3.8
-  - 2.4.5
-  - 2.5.3
-  - 2.6.1
-  #- "jruby-1.7.27"
-  - "jruby-9.2.6.0"  
- 
+
+services:
+  - postgres 
+
 build:
-  pre_ci_boot:
-    image_name: drydock/u16ruball
-    image_tag: master
-    pull: true
+ #pre_ci_boot:
+   ## image_tag: v7.1.4
+   # pull: true
     
   ci:
     - java --version
