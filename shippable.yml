@@ -15,4 +15,5 @@ build:
     - java --version
     - source /etc/profile.d/rvm.sh
     - rvm list
-    - ruby --version 
+    - ruby --version
+    - Docker --version
